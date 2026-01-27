@@ -1,0 +1,127 @@
+.a{
+    color:rgb(139, 7, 7);
+    font-style: italic;
+}
+body{
+    background:white;
+    
+}
+img{
+    display:flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 20px;
+    width: 10%;
+    padding: 10px;;
+    
+}
+
+.c{
+    display:flex;
+    flex-wrap: wrap;
+    gap:50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align:left;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    
+}
+
+.e{
+    flex: 1;
+    min-width: 20px;
+    text-decoration: none;
+}
+.b{
+    color: rgb(45, 0, 149);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.list{
+    list-style: none;
+}
+
+.b{
+    color: red;
+}
+
+.b:hover{
+    color: orange;
+}
+
+.b:visited{
+    color: red;
+}
+
+.b:active{
+    color: rgb(15, 214, 114);
+}
+.d{
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+
+}
+
+.d:hover{
+    color: orange;
+}
+
+.d:visited{
+    color: red;
+}
+
+.d:active{
+    color: rgb(15, 214, 114);
+}
+form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.f{
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+
+}
+
+.f:hover{
+    color: orange;
+}
+
+.f:visited{
+    color: red;
+}
+
+.f:active{
+    color: rgb(15, 214, 114);
+}
+.g{
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+
+}
+.listt {
+    list-style: none;  
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center; 
+}
+p{
+    text-align: justify;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: medium;
+}

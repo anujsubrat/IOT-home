@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        p{
+            color: rgb(0, 255, 0);
+            font-size: small;
+            text-align: left;
+        }
+        h2 {
+            text-align: center;
+            border: 2px solid rgb(47, 249, 40);
+            background-color: rgb(47, 255, 123);
+        }
+
+        form {
+            width: 300px;
+            background-color: rgb(173, 152, 85);
+            padding: 15px 40px 40px;
+            margin: 50px auto 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input,select,textarea {
+            border: 2px solid rgb(54, 255, 47);
+            border: 1px solid #ccc;
+            padding: 8px;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background-color: greenyellow;
+            border: none;
+            font-size: 16px;
+        }
+
+        .match {
+            border: 2px solid green;
+        }
+
+        .mismatch {
+            border: 2px solid red;
+        }
+        
+        #message {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+<center>
+<form action="http://localhost/submit2.php" method="post" onsubmit="return validatePasswords()">
+        <h2>Register Form</h2>
+        <p>* Field are manaditry</p>
+         
+        <input type="text" name="fname" placeholder="First Name*" required><br><br>
+        <input type="text" name="lname" placeholder="Last Name*" required><br><br>
+
+        <input type="email" name="email" placeholder="Email*" required><br><br>
+
+        <select name="country_code" required>
+            <option value="+91">IN +91*</option>
+            <option value="+1">US +1</option>
+            <option value="+44">UK +44</option>
+            <option value="+61">AU +61</option>
+        </select>
+
+        <input type="text" name="mobile" required placeholder="Mobile Number*"><br><br>
+
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+        <textarea name="address" rows="4" placeholder="Address*" required></textarea><br><br>
+
+        <input type="text" name="pincode" placeholder="Pincode*" required minlength="6" maxlength="6"><br><br>
+
+        <input type="password" id="password" name="password" placeholder="Password*" minlength="8" required>
+        <p>must contain 8 charactor</p><br>
+        <input type="password" id="confirmPassword" name="confirmpassword" required placeholder="Confirm Password*"><br><br>
+        <span id="message"></span><br><br>
+        <label>
+            <input type="checkbox" name="terms" required> Agree to terms and conditions
+           
+        </label>
+       <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+</center>
+<script src="passwordandconfirm.js"></script>
+</body>
+</html>
