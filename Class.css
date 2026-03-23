@@ -3,7 +3,9 @@
     font-style: italic;
 }
 body{
-    background:white;
+   /* background:white;*/
+   background: url("bg.jpg");
+   /* opacity: 0.5;*/
     
 }
 img{
@@ -34,6 +36,7 @@ img{
     flex: 1;
     min-width: 20px;
     text-decoration: none;
+    
 }
 .b{
     color: rgb(45, 0, 149);
@@ -123,5 +126,6 @@ p{
     text-align: justify;
     font-weight: lighter;
     font-style: italic;
-    font-size: medium;
+    font-size: clamp(20px, 5vw, 10px);
+    color: rgb(54, 2, 2);
 }

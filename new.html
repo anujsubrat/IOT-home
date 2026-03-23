@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Form</title>
     <style>
+        body{
+            background: url("bg.jpg");
+        }
         p{
             color: rgb(0, 255, 0);
             font-size: small;
@@ -72,7 +75,7 @@
             <option value="+61">AU +61</option>
         </select>
 
-        <input type="text" name="mobile" required placeholder="Mobile Number*"><br><br>
+        <input type="text" name="mobile" placeholder="Mobile Number*" minlength="10" maxlength="12"><br><br>
 
         <input type="radio" name="gender" value="Male" required> Male
         <input type="radio" name="gender" value="Female"> Female
@@ -85,7 +88,7 @@
 
         <input type="password" id="password" name="password" placeholder="Password*" minlength="8" required>
         <p>must contain 8 charactor</p><br>
-        <input type="password" id="confirmPassword" name="confirmpassword" required placeholder="Confirm Password*"><br><br>
+        <input type="password" id="confirmPassword" name="confirmpassword" required placeholder="Confirm Password*"  ><br><br>
         <span id="message"></span><br><br>
         <label>
             <input type="checkbox" name="terms" required> Agree to terms and conditions

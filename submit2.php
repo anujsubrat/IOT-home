@@ -18,14 +18,15 @@ $gender=$_POST['gender'];
 $address=$_POST['address'];
 $pincode=$_POST['pincode'];
 $password=$_POST['password'];
-$hpassword=password_hash($password,PASSWORD_DEFAULT);
+
+//$hpassword=password_hash($password,PASSWORD_DEFAULT);
 
 $sql= "INSERT INTO `userinfo` (`fname`, `lname`, `email`, `mobile`, `gender`, `address`, `pincode`, `password`, `date`) VALUES ('$fname', '$lname', '$email', '$mobile', '$gender', '$address', '$pincode', '$password',current_timestamp())";
 //echo $sql;
 if($con->query($sql)== true){
-    echo "Registraion Sucessfull <br><br><br>";
+    echo "<h3>Registraion Sucessfull<h3> <br><br><br>";
    
-    echo "<center><button><a href='html.html' target='_blank'>Go to home</a></button></center>";
+    echo "<center><button><a href='index.html' target='_blank'>Go to home</a></button></center>";
 }else{
     echo "Error : $sql <br> $con->error";
 
